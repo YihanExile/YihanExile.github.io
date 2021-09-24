@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://yihanexile.github.io</id>
     <title>Gridea</title>
-    <updated>2021-09-24T16:23:11.948Z</updated>
+    <updated>2021-09-24T16:26:45.991Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://yihanexile.github.io"/>
+    <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://yihanexile.github.io/images/avatar.png</logo>
+    <icon>https://yihanexile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[弈梒在Gridea上的第一个博客]]></title>
-        <id>http://localhost:4000/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/</id>
-        <link href="http://localhost:4000/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
+        <title type="html"><![CDATA[Hello 弈梒部落格]]></title>
+        <id>https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/</id>
+        <link href="https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
         </link>
         <updated>2021-09-24T16:19:36.000Z</updated>
         <content type="html"><![CDATA[<p>以后会在博客上记录一些<br>
-1.学习经验<br>
+<strong>1.学习经验<br>
 2.生活帖<br>
-3.实验进度<br>
-甚至有可能是一些游戏经验帖<br>
-<img src="http://localhost:4000/post-images/1632500583902.png" alt="" loading="lazy"></p>
+3.实验进度</strong><br>
+甚至有可能是一些<strong>游戏经验帖</strong><br>
+博主是<strong>弈梒</strong><br>
+<img src="https://yihanexile.github.io/post-images/1632500583902.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
