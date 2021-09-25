@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://yihanexile.github.io</id>
+    <id>http://localhost:4000</id>
     <title>弈梒blog</title>
-    <updated>2021-09-25T10:48:18.051Z</updated>
+    <updated>2021-09-25T11:17:26.452Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://yihanexile.github.io"/>
-    <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>This is the start of how it ever ends</subtitle>
-    <logo>https://yihanexile.github.io/images/avatar.png</logo>
-    <icon>https://yihanexile.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, 弈梒blog</rights>
     <entry>
         <title type="html"><![CDATA[Hello 弈梒Blog]]></title>
-        <id>https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/</id>
-        <link href="https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
+        <id>http://localhost:4000/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/</id>
+        <link href="http://localhost:4000/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
         </link>
         <updated>2021-09-24T16:19:36.000Z</updated>
         <summary type="html"><![CDATA[<p>压在头上一年的事也在昨天两个老师的面试后宣告结束了，焦虑的生活好像又缓步了下来😀，回顾前三年的大学学习，感觉自己还是虚度了大部分光阴，在一个个摆烂和赶ddl的周期中不断重复😕，虽然最后结局尚且看起来不是太惨，但学到的东西实属有限且让人觉得不牢靠。</p>
@@ -34,7 +34,7 @@
 <!-- more -->
 <p><strong>Welcome to Yihan Blog！</strong><br>
 😘😘<br>
-<img src="https://yihanexile.github.io/post-images/1632503783434.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1632503783434.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
