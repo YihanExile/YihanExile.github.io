@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://yihanexile.github.io</id>
+    <id>http://localhost:4000</id>
     <title>弈梒blog</title>
-    <updated>2021-09-27T07:04:49.055Z</updated>
+    <updated>2021-09-27T07:10:44.598Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://yihanexile.github.io"/>
-    <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>This is the start of how it ever ends</subtitle>
-    <logo>https://yihanexile.github.io/images/avatar.png</logo>
-    <icon>https://yihanexile.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, 弈梒blog</rights>
     <entry>
         <title type="html"><![CDATA[个人简介]]></title>
-        <id>https://yihanexile.github.io/post/post/</id>
-        <link href="https://yihanexile.github.io/post/post/">
+        <id>http://localhost:4000/post/post/</id>
+        <link href="http://localhost:4000/post/post/">
         </link>
         <updated>2021-09-27T06:31:39.000Z</updated>
         <content type="html"><![CDATA[<h1 id="学习相关">学习相关</h1>
 <h2 id="所在地">所在地</h2>
 <ol>
 <li>成都某大学</li>
-<li>计算机相关专业本科生，目前大四已保研<img src="https://yihanexile.github.io/post-images/1632725204908.png" alt="" loading="lazy"></li>
+<li>计算机相关专业本科生，目前大四已保研<img src="http://localhost:4000/post-images/1632725204908.png" alt="" loading="lazy"></li>
 </ol>
 <h2 id="技能">技能</h2>
 <ol>
@@ -41,7 +41,7 @@
 </ol>
 <h1 id="游戏相关">游戏相关</h1>
 <h2 id="ra2">RA2</h2>
-<figure data-type="image" tabindex="1"><img src="https://yihanexile.github.io/post-images/1632726200706.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1632726200706.png" alt="" loading="lazy"></figure>
 <ol>
 <li>YR版本RT少将考官</li>
 <li>原版完美战队旅长</li>
@@ -54,24 +54,24 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[接下来的安排]]></title>
-        <id>https://yihanexile.github.io/post/jie-xia-lai-de-an-pai/</id>
-        <link href="https://yihanexile.github.io/post/jie-xia-lai-de-an-pai/">
+        <id>http://localhost:4000/post/jie-xia-lai-de-an-pai/</id>
+        <link href="http://localhost:4000/post/jie-xia-lai-de-an-pai/">
         </link>
         <updated>2021-09-26T11:31:29.000Z</updated>
         <summary type="html"><![CDATA[<p>虽然在之前做大创的时候有接触和学习过一些Deep Learing和Machine Learning的方法，但总有一种不牢靠不成体系的感觉，对于Pytorch的使用也是浅尝辄止。接下来需要系统的重新学习一下线性代数和概率论。另外对于Pytorch也需要系统的学习一下，从而构建起整个体系。由于大创还没有做完，所以可能系统的学习概率论，线性代数以及Pytorch这三门课还得往后放一下。到十月中旬下午就先以读代码，复现《Infinite Mixture Prototypes for Few-Shot Learning》<br>
 <img src="https://yihanexile.github.io/post-images/1632657125460.png" alt="" loading="lazy"></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>虽然在之前做大创的时候有接触和学习过一些Deep Learing和Machine Learning的方法，但总有一种不牢靠不成体系的感觉，对于Pytorch的使用也是浅尝辄止。接下来需要系统的重新学习一下线性代数和概率论。另外对于Pytorch也需要系统的学习一下，从而构建起整个体系。由于大创还没有做完，所以可能系统的学习概率论，线性代数以及Pytorch这三门课还得往后放一下。到十月中旬下午就先以读代码，复现《Infinite Mixture Prototypes for Few-Shot Learning》<br>
-<img src="https://yihanexile.github.io/post-images/1632657125460.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1632657125460.png" alt="" loading="lazy"></p>
 <!-- more -->
 <p>论文中IMP的实现算法如下<br>
-<img src="https://yihanexile.github.io/post-images/1632657329819.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1632657329819.png" alt="" loading="lazy"></p>
 <ol>
 <li>初始化参数μc lc ,σc=σl,μc是类中所有支持样本的平均，C是类的数字</li>
 </ol>
 <!-- more -->
 <ol start="2">
-<li>利用论文提出的方程5来测算λ<img src="https://yihanexile.github.io/post-images/1632659551196.png" alt="" loading="lazy"></li>
+<li>利用论文提出的方程5来测算λ<img src="http://localhost:4000/post-images/1632659551196.png" alt="" loading="lazy"></li>
 </ol>
 <!-- more -->
 <ol start="3">
@@ -87,14 +87,14 @@
 </ol>
 <!-- more -->
 <ol start="6">
-<li>使用方程6来对查询样本进行分类（其中cn*是第n个class中距离样本最近的那个簇）<img src="https://yihanexile.github.io/post-images/1632659066975.png" alt="" loading="lazy"></li>
+<li>使用方程6来对查询样本进行分类（其中cn*是第n个class中距离样本最近的那个簇）<img src="http://localhost:4000/post-images/1632659066975.png" alt="" loading="lazy"></li>
 </ol>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello 弈梒Blog]]></title>
-        <id>https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/</id>
-        <link href="https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
+        <id>http://localhost:4000/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/</id>
+        <link href="http://localhost:4000/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
         </link>
         <updated>2021-09-24T16:19:36.000Z</updated>
         <summary type="html"><![CDATA[<p>压在头上一年的事也在昨天两个老师的面试后宣告结束了，焦虑的生活好像又缓步了下来😀，回顾前三年的大学学习，感觉自己还是虚度了大部分光阴，在一个个摆烂和赶ddl的周期中不断重复😕，虽然最后结局尚且看起来不是太惨，但学到的东西实属有限且让人觉得不牢靠。</p>
@@ -115,7 +115,7 @@
 <!-- more -->
 <p><strong>Welcome to Yihan Blog！</strong><br>
 😘😘<br>
-<img src="https://yihanexile.github.io/post-images/1632503783434.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1632503783434.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
