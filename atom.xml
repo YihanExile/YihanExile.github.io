@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yihanexile.github.io</id>
     <title>弈梒blog</title>
-    <updated>2021-09-27T06:26:43.415Z</updated>
+    <updated>2021-09-27T07:00:52.671Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yihanexile.github.io"/>
     <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://yihanexile.github.io/images/avatar.png</logo>
     <icon>https://yihanexile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 弈梒blog</rights>
+    <entry>
+        <title type="html"><![CDATA[个人简介]]></title>
+        <id>https://yihanexile.github.io/post/post/</id>
+        <link href="https://yihanexile.github.io/post/post/">
+        </link>
+        <updated>2021-09-27T06:31:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="学习相关">学习相关</h1>
+<h2 id="所在地">所在地</h2>
+<ol>
+<li>成都某大学</li>
+<li>计算机相关专业本科生，目前大四已保研<img src="https://yihanexile.github.io/post-images/1632725204908.png" alt="" loading="lazy"></li>
+</ol>
+<h2 id="技能">技能</h2>
+<ol>
+<li>深度学习</li>
+<li>前端</li>
+<li>简单的都会copy，难的不会。评价: 半吊子水平，骗骗外行，内行不齿</li>
+</ol>
+<h2 id="研究生方向">研究生方向</h2>
+<ol>
+<li>计算机视觉</li>
+<li>医学图像</li>
+<li>深度学习</li>
+</ol>
+<h2 id="荣誉">荣誉</h2>
+<ol>
+<li>2021微信小程序全国一等奖</li>
+<li>2021中国软件杯新闻文本分类算法赛道全国三等奖</li>
+</ol>
+<h1 id="游戏相关">游戏相关</h1>
+<h2 id="ra2">RA2</h2>
+<figure data-type="image" tabindex="1"><img src="https://yihanexile.github.io/post-images/1632725586836.png" alt="" loading="lazy"></figure>
+<ol>
+<li>YR版本RT少将考官</li>
+<li>原版完美战队旅长</li>
+</ol>
+<h2 id="cf">CF</h2>
+<ol>
+<li>30人多人生化快乐王</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[接下来的安排]]></title>
         <id>https://yihanexile.github.io/post/jie-xia-lai-de-an-pai/</id>
