@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yihanexile.github.io</id>
     <title>弈梒blog</title>
-    <updated>2021-09-27T08:01:38.892Z</updated>
+    <updated>2021-10-01T08:18:19.112Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yihanexile.github.io"/>
     <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://yihanexile.github.io/images/avatar.png</logo>
     <icon>https://yihanexile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 弈梒blog</rights>
+    <entry>
+        <title type="html"><![CDATA[torch.nn.parameter.Parameter]]></title>
+        <id>https://yihanexile.github.io/post/parameters/</id>
+        <link href="https://yihanexile.github.io/post/parameters/">
+        </link>
+        <updated>2021-09-29T18:13:01.000Z</updated>
+        <content type="html"><![CDATA[<p>这几天偷懒了，实验一直没怎么推进，昨晚上看了下代码，这篇博客算是对于IMP这个模型的实验代码设计。<br>
+首先，由于IMP与原始Pronet不同，一个batch内的操作相较于原来的求均值表达原型复杂了很多。(原来的模型主要是在forward里实现一些batchnorm,relu,conv的操作)其余的加减乘除操作更多的被放在了后续非nn.module的执行。比较合理的设计是将(增加簇，删除簇这些操作在IMP这个类里实现（从而辅助继承了nn.module模块的IMP类在forward方法里实现完整的一个正向传播）。<br>
+写到这里就必须讲一下IMP的理解，里面有个lamda(由一些超参和sigma共同决定的是否建立新簇的阈值)变量是通过学习sigma来进行调整的，那么sigma应该也是一个需要保存的变量。以前遇到的模型，基本只是直接保存网络的权重,没有较小的可学习的参数需要学习。这次会用到一个新的类叫做torch.nn.parameter.Parameter，官方文档解释如下</p>
+<h2 id="torchnnparameterparameter">torch.nn.parameter.Parameter</h2>
+<p>A kind of Tensor that is to be considered a module parameter.<br>
+Parameters are Tensor subclasses, that have a very special property when used with Module s - when they’re assigned as Module attributes they are automatically added to the list of its parameters, and will appear e.g. in parameters() iterator. Assigning a Tensor doesn’t have such effect. This is because one might want to cache some temporary state, like last hidden state of the RNN, in the model. If there was no such class as Parameter, these temporaries would get registered too.</p>
+<h3 id="parameters">Parameters：</h3>
+<p>data (Tensor) – parameter tensor.<br>
+requires_grad (bool, optional) – if the parameter requires gradient. See Locally disabling gradient computation for more details. Default: True<br>
+其实理解应该就是一个可学习的tensor，且在module的parameters列表里，所以其实如果是像relation network这种需要两个网络架构的模型<img src="https://yihanexile.github.io/post-images/1633076236228.png" alt="" loading="lazy">，可以将每一个network structure用一个nn.module类来实现，这样可以很好的实现模块化，重复使用使模型也看起来更为的简洁易懂。但如果像IMP这种网络结构+一些learnable小参数的模型，就用parameters添加就行，模型会将该参数保存。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[接下来的安排]]></title>
         <id>https://yihanexile.github.io/post/jie-xia-lai-de-an-pai/</id>
