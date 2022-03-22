@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yihanexile.github.io</id>
     <title>弈梒blog</title>
-    <updated>2022-03-14T11:14:53.729Z</updated>
+    <updated>2022-03-22T14:20:56.040Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yihanexile.github.io"/>
     <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
@@ -10,6 +10,71 @@
     <logo>https://yihanexile.github.io/images/avatar.png</logo>
     <icon>https://yihanexile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 弈梒blog</rights>
+    <entry>
+        <title type="html"><![CDATA[函数的分文件编写]]></title>
+        <id>https://yihanexile.github.io/post/han-shu-de-fen-wen-jian-bian-xie/</id>
+        <link href="https://yihanexile.github.io/post/han-shu-de-fen-wen-jian-bian-xie/">
+        </link>
+        <updated>2022-03-22T13:38:53.000Z</updated>
+        <content type="html"><![CDATA[<p>**作用：**让代码结构更清晰</p>
+<ol>
+<li>创建.h头文件</li>
+<li>创建.cpp源文件</li>
+<li>在头文件中写函数的声明</li>
+<li>在源文件中写函数的定义</li>
+</ol>
+<hr>
+<p><strong>示例:</strong></p>
+<h3 id="swaph">swap.h</h3>
+<pre><code>//
+// Created by 1 on 2022/3/22.
+//
+#include&lt;iostream&gt;
+using namespace std;
+void swap(int a, int b);
+</code></pre>
+<h3 id="swapcpp">swap.cpp</h3>
+<pre><code>#include&quot;swap.h&quot;
+//
+// Created by 1 on 2022/3/22.
+//
+//define function
+void swap(int a, int b){
+    cout &lt;&lt; &quot;before swap:&quot;&lt;&lt;endl;
+    cout &lt;&lt; &quot;a = &quot; &lt;&lt; a&lt;&lt; endl;
+    cout &lt;&lt; &quot;b = &quot; &lt;&lt; b&lt;&lt; endl;
+    int temp = a;
+    a = b;
+    b = temp;
+    cout &lt;&lt; &quot;after swap:&quot;&lt;&lt;endl;
+    cout &lt;&lt; &quot;a = &quot; &lt;&lt; a&lt;&lt; endl;
+    cout &lt;&lt; &quot;b = &quot; &lt;&lt; b&lt;&lt; endl;
+}
+</code></pre>
+<h3 id="maincpp">main.cpp</h3>
+<pre><code>#include &quot;swap.h&quot;
+int main() {
+    int a = 7;
+    int b = 6;
+    swap(a,b);
+}
+</code></pre>
+<h2 id="输出结果如下">输出结果如下<br>
+<img src="https://yihanexile.github.io/post-images/1647958505358.png" alt="" loading="lazy"></h2>
+<p>ps: 在有多个文件需要编译的时候注意修改cmakelists文件</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cpp学习]]></title>
+        <id>https://yihanexile.github.io/post/cpp-xue-xi/</id>
+        <link href="https://yihanexile.github.io/post/cpp-xue-xi/">
+        </link>
+        <updated>2022-03-22T13:31:18.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="学习路线">学习路线</h1>
+<p>如下，嫖知乎的<br>
+<img src="https://yihanexile.github.io/post-images/1647955900478.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[活在当下]]></title>
         <id>https://yihanexile.github.io/post/huo-zai-dang-xia/</id>
