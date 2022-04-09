@@ -4,73 +4,43 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>个人简介 - 弈梒blog</title>
+<title>内存分区模型 - 弈梒blog</title>
 <link rel="shortcut icon" href="https://yihanexile.github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://yihanexile.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://yihanexile.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="个人简介 - 弈梒blog - Atom Feed" href="https://yihanexile.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="内存分区模型 - 弈梒blog - Atom Feed" href="https://yihanexile.github.io/atom.xml">
 
     
 
-  <meta name="description" content="学习相关
-所在地
+  <meta name="description" content="C++程序在执行时，将内存大方向划分为4个区域
 
-成都某大学
-计算机相关专业本科生，目前大四已保研
+代码区：存放函数体的二进制代码，由操作系统进行管理
+全局区：存放全局变量、静态变量和常量
+栈区：由编译器自动分配释放，存放函数的参数值，局部变量等
+堆区：由程序员自己分配，程序结束后由操作系..." />
+  <meta property="og:title" content="内存分区模型 - 弈梒blog">
+  <meta property="og:description" content="C++程序在执行时，将内存大方向划分为4个区域
 
-技能
-
-机器学习（小样本学习为主）
-前端
-可copy，面向GitHub可白嫖，不可从零创作。评价: 半吊子水平，骗骗外行，内行不齿
-
-研究生方向
-
-计算机视觉
-医学图像..." />
-  <meta property="og:title" content="个人简介 - 弈梒blog">
-  <meta property="og:description" content="学习相关
-所在地
-
-成都某大学
-计算机相关专业本科生，目前大四已保研
-
-技能
-
-机器学习（小样本学习为主）
-前端
-可copy，面向GitHub可白嫖，不可从零创作。评价: 半吊子水平，骗骗外行，内行不齿
-
-研究生方向
-
-计算机视觉
-医学图像..." />
+代码区：存放函数体的二进制代码，由操作系统进行管理
+全局区：存放全局变量、静态变量和常量
+栈区：由编译器自动分配释放，存放函数的参数值，局部变量等
+堆区：由程序员自己分配，程序结束后由操作系..." />
   <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://yihanexile.github.io/post/about/" />
+  <meta property="og:url" content="https://yihanexile.github.io/post/nei-cun-fen-qu-mo-xing/" />
   <meta property="og:image" content="https://yihanexile.github.io/images/avatar.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="个人简介 - 弈梒blog">
-  <meta name="twitter:description" content="学习相关
-所在地
+  <meta name="twitter:title" content="内存分区模型 - 弈梒blog">
+  <meta name="twitter:description" content="C++程序在执行时，将内存大方向划分为4个区域
 
-成都某大学
-计算机相关专业本科生，目前大四已保研
-
-技能
-
-机器学习（小样本学习为主）
-前端
-可copy，面向GitHub可白嫖，不可从零创作。评价: 半吊子水平，骗骗外行，内行不齿
-
-研究生方向
-
-计算机视觉
-医学图像...">
+代码区：存放函数体的二进制代码，由操作系统进行管理
+全局区：存放全局变量、静态变量和常量
+栈区：由编译器自动分配释放，存放函数的参数值，局部变量等
+堆区：由程序员自己分配，程序结束后由操作系...">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://yihanexile.github.io/post/about/">
+  <link rel="canonical" href="https://yihanexile.github.io/post/nei-cun-fen-qu-mo-xing/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
@@ -88,50 +58,24 @@
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          个人简介
+          内存分区模型
         </h1>
         
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2021-09-27 · 1 min read</div>
-          
-            <a href="https://yihanexile.github.io/tag/kmpKaUQnM/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
-              <i class="ri-hashtag"></i>
-              个人简介
-            </a>
+          <div class="text-gray-400 text-sm mr-4">2022-03-24 · 1 min read</div>
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <h1 id="学习相关">学习相关</h1>
-<h2 id="所在地">所在地<img src="https://yihanexile.github.io/post-images/1632729290125.png" alt="" loading="lazy"></h2>
-<ol>
-<li>成都某大学</li>
-<li>计算机相关专业本科生，目前大四已保研</li>
-</ol>
-<h2 id="技能">技能</h2>
-<ol>
-<li>机器学习（小样本学习为主）</li>
-<li>前端</li>
-<li>可copy，面向GitHub可白嫖，不可从零创作。评价: 半吊子水平，骗骗外行，内行不齿</li>
-</ol>
-<h2 id="研究生方向">研究生方向</h2>
-<ol>
-<li>计算机视觉</li>
-<li>医学图像</li>
-<li>机器学习</li>
-</ol>
-<h2 id="荣誉">荣誉</h2>
-<ol>
-<li>2021微信小程序全国一等奖</li>
-<li>2021中国软件杯新闻文本分类算法赛道全国三等奖</li>
-</ol>
-<h1 id="游戏相关">游戏相关</h1>
-<h2 id="ra2">RA2<img src="https://yihanexile.github.io/post-images/1632728824767.png" alt="" loading="lazy"></h2>
-<ol>
-<li>2021红警原版全能王比赛全国24强</li>
-<li>原版完美战队旅考</li>
-</ol>
-<h2 id="cf">CF</h2>
-<p>30人多人生化快乐王</p>
+          <p>C++程序在执行时，将内存大方向划分为4个区域</p>
+<ul>
+<li>代码区：存放函数体的二进制代码，由操作系统进行管理</li>
+<li>全局区：存放全局变量、静态变量和常量</li>
+<li>栈区：由编译器自动分配释放，存放函数的参数值，局部变量等</li>
+<li>堆区：由程序员自己分配，程序结束后由操作系统回收</li>
+</ul>
+<hr>
+<h3 id="内存四区意义"><strong>内存四区意义：</strong></h3>
+<h2 id="不同区域存放的数据赋予不同的生命周期更灵活的编程">不同区域存放的数据赋予不同的生命周期，更灵活的编程</h2>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
@@ -173,18 +117,14 @@
       </div>
       <div class="post-toc-container">
         <ul class="markdownIt-TOC">
-<li><a href="#%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3">学习相关</a>
+<li>
 <ul>
-<li><a href="#%E6%89%80%E5%9C%A8%E5%9C%B0">所在地!</a></li>
-<li><a href="#%E6%8A%80%E8%83%BD">技能</a></li>
-<li><a href="#%E7%A0%94%E7%A9%B6%E7%94%9F%E6%96%B9%E5%90%91">研究生方向</a></li>
-<li><a href="#%E8%8D%A3%E8%AA%89">荣誉</a></li>
+<li>
+<ul>
+<li><a href="#%E5%86%85%E5%AD%98%E5%9B%9B%E5%8C%BA%E6%84%8F%E4%B9%89"><strong>内存四区意义：</strong></a></li>
 </ul>
 </li>
-<li><a href="#%E6%B8%B8%E6%88%8F%E7%9B%B8%E5%85%B3">游戏相关</a>
-<ul>
-<li><a href="#ra2">RA2!</a></li>
-<li><a href="#cf">CF</a></li>
+<li><a href="#%E4%B8%8D%E5%90%8C%E5%8C%BA%E5%9F%9F%E5%AD%98%E6%94%BE%E7%9A%84%E6%95%B0%E6%8D%AE%E8%B5%8B%E4%BA%88%E4%B8%8D%E5%90%8C%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9B%B4%E7%81%B5%E6%B4%BB%E7%9A%84%E7%BC%96%E7%A8%8B">不同区域存放的数据赋予不同的生命周期，更灵活的编程</a></li>
 </ul>
 </li>
 </ul>

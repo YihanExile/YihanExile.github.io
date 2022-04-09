@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yihanexile.github.io</id>
     <title>弈梒blog</title>
-    <updated>2022-03-22T14:30:18.344Z</updated>
+    <updated>2022-04-09T09:46:52.551Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yihanexile.github.io"/>
     <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
@@ -10,72 +10,6 @@
     <logo>https://yihanexile.github.io/images/avatar.png</logo>
     <icon>https://yihanexile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 弈梒blog</rights>
-    <entry>
-        <title type="html"><![CDATA[函数的分文件编写]]></title>
-        <id>https://yihanexile.github.io/post/han-shu-de-fen-wen-jian-bian-xie/</id>
-        <link href="https://yihanexile.github.io/post/han-shu-de-fen-wen-jian-bian-xie/">
-        </link>
-        <updated>2022-03-22T13:38:53.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>作用:</strong><br>
-让代码结构更清晰</p>
-<ol>
-<li>创建.h头文件</li>
-<li>创建.cpp源文件</li>
-<li>在头文件中写函数的声明</li>
-<li>在源文件中写函数的定义</li>
-</ol>
-<hr>
-<p><strong>示例:</strong></p>
-<h3 id="swaph">swap.h</h3>
-<pre><code>//
-// Created by 1 on 2022/3/22.
-//
-#include&lt;iostream&gt;
-using namespace std;
-void swap(int a, int b);
-</code></pre>
-<h3 id="swapcpp">swap.cpp</h3>
-<pre><code>#include&quot;swap.h&quot;
-//
-// Created by 1 on 2022/3/22.
-//
-//define function
-void swap(int a, int b){
-    cout &lt;&lt; &quot;before swap:&quot;&lt;&lt;endl;
-    cout &lt;&lt; &quot;a = &quot; &lt;&lt; a&lt;&lt; endl;
-    cout &lt;&lt; &quot;b = &quot; &lt;&lt; b&lt;&lt; endl;
-    int temp = a;
-    a = b;
-    b = temp;
-    cout &lt;&lt; &quot;after swap:&quot;&lt;&lt;endl;
-    cout &lt;&lt; &quot;a = &quot; &lt;&lt; a&lt;&lt; endl;
-    cout &lt;&lt; &quot;b = &quot; &lt;&lt; b&lt;&lt; endl;
-}
-</code></pre>
-<h3 id="maincpp">main.cpp</h3>
-<pre><code>#include &quot;swap.h&quot;
-int main() {
-    int a = 7;
-    int b = 6;
-    swap(a,b);
-}
-</code></pre>
-<h2 id="输出结果如下">输出结果如下<br>
-<img src="https://yihanexile.github.io/post-images/1647958505358.png" alt="" loading="lazy"></h2>
-<p>ps: 在有多个文件需要编译的时候注意修改cmakelists文件</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cpp学习]]></title>
-        <id>https://yihanexile.github.io/post/cpp-xue-xi/</id>
-        <link href="https://yihanexile.github.io/post/cpp-xue-xi/">
-        </link>
-        <updated>2022-03-22T13:31:18.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="学习路线">学习路线</h1>
-<p>如下，嫖知乎的<br>
-<img src="https://yihanexile.github.io/post-images/1647955900478.jpg" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[活在当下]]></title>
         <id>https://yihanexile.github.io/post/huo-zai-dang-xia/</id>
@@ -143,42 +77,42 @@ requires_grad (bool, optional) – if the parameter requires gradient. See Local
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[接下来的安排]]></title>
-        <id>https://yihanexile.github.io/post/jie-xia-lai-de-an-pai/</id>
-        <link href="https://yihanexile.github.io/post/jie-xia-lai-de-an-pai/">
+        <title type="html"><![CDATA[个人简介]]></title>
+        <id>https://yihanexile.github.io/post/about/</id>
+        <link href="https://yihanexile.github.io/post/about/">
         </link>
-        <updated>2021-09-26T11:31:29.000Z</updated>
-        <summary type="html"><![CDATA[<p>虽然在之前做大创的时候有接触和学习过一些Deep Learing和Machine Learning的方法，但总有一种不牢靠不成体系的感觉，对于Pytorch的使用也是浅尝辄止。接下来需要系统的重新学习一下线性代数和概率论。另外对于Pytorch也需要系统的学习一下，从而构建起整个体系。由于大创还没有做完，所以可能系统的学习概率论，线性代数以及Pytorch这三门课还得往后放一下。到十月中旬下午就先以读代码，复现《Infinite Mixture Prototypes for Few-Shot Learning》<br>
-<img src="https://yihanexile.github.io/post-images/1632657125460.png" alt="" loading="lazy"></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>虽然在之前做大创的时候有接触和学习过一些Deep Learing和Machine Learning的方法，但总有一种不牢靠不成体系的感觉，对于Pytorch的使用也是浅尝辄止。接下来需要系统的重新学习一下线性代数和概率论。另外对于Pytorch也需要系统的学习一下，从而构建起整个体系。由于大创还没有做完，所以可能系统的学习概率论，线性代数以及Pytorch这三门课还得往后放一下。到十月中旬下午就先以读代码，复现《Infinite Mixture Prototypes for Few-Shot Learning》<br>
-<img src="https://yihanexile.github.io/post-images/1632657125460.png" alt="" loading="lazy"></p>
-<!-- more -->
-<p>论文中IMP的实现算法如下<br>
-<img src="https://yihanexile.github.io/post-images/1632657329819.png" alt="" loading="lazy"></p>
+        <updated>2021-09-27T07:43:21.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="学习相关">学习相关</h1>
+<h2 id="所在地">所在地<img src="https://yihanexile.github.io/post-images/1632729290125.png" alt="" loading="lazy"></h2>
 <ol>
-<li>初始化参数μc lc ,σc=σl,μc是类中所有支持样本的平均，C是类的数字</li>
+<li>成都某大学</li>
+<li>计算机相关专业本科生，目前大四已保研</li>
 </ol>
-<!-- more -->
-<ol start="2">
-<li>利用论文提出的方程5来测算λ<img src="https://yihanexile.github.io/post-images/1632659551196.png" alt="" loading="lazy"></li>
+<h2 id="技能">技能</h2>
+<ol>
+<li>机器学习（小样本学习为主）</li>
+<li>前端</li>
+<li>可copy，面向GitHub可白嫖，不可从零创作。评价: 半吊子水平，骗骗外行，内行不齿</li>
 </ol>
-<!-- more -->
-<ol start="3">
-<li>推理每个类中的簇，推理的过程就是测算支持集内的每个样本点xi经过网络后嵌入高维的向量测算与每个类c的原型表达的距离di,c，若同属一个类则令其为欧氏距离的平方，若不同则令其为正无穷。如果mincdic＞λ则 向C的集合内加入一个新的元素，且该新簇的原型表达为hφ(xi)，类标为xi的原类标yi，其中sigma等于sigmal（因为我的数据集都是打了类标的，所以就不考虑另一种情况）</li>
+<h2 id="研究生方向">研究生方向</h2>
+<ol>
+<li>计算机视觉</li>
+<li>医学图像</li>
+<li>机器学习</li>
 </ol>
-<!-- more -->
-<ol start="4">
-<li>更新簇软分配zi,c来作为归一化高斯密度</li>
+<h2 id="荣誉">荣誉</h2>
+<ol>
+<li>2021微信小程序全国一等奖</li>
+<li>2021中国软件杯新闻文本分类算法赛道全国三等奖</li>
 </ol>
-<!-- more -->
-<ol start="5">
-<li>对于每个簇，对其内所有成员利用高斯密度来计算加权均值</li>
+<h1 id="游戏相关">游戏相关</h1>
+<h2 id="ra2">RA2<img src="https://yihanexile.github.io/post-images/1632728824767.png" alt="" loading="lazy"></h2>
+<ol>
+<li>2021红警原版全能王比赛全国24强</li>
+<li>原版完美战队旅考</li>
 </ol>
-<!-- more -->
-<ol start="6">
-<li>使用方程6来对查询样本进行分类（其中cn*是第n个class中距离样本最近的那个簇）<img src="https://yihanexile.github.io/post-images/1632659066975.png" alt="" loading="lazy"></li>
-</ol>
+<h2 id="cf">CF</h2>
+<p>30人多人生化快乐王</p>
 ]]></content>
     </entry>
     <entry>
@@ -187,9 +121,8 @@ requires_grad (bool, optional) – if the parameter requires gradient. See Local
         <link href="https://yihanexile.github.io/post/yi-han-zai-gridea-shang-de-di-yi-ge-bo-ke/">
         </link>
         <updated>2021-09-24T16:19:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>压在头上一年的事也在昨天两个老师的面试后宣告结束了，焦虑的生活好像又缓步了下来😀，回顾前三年的大学学习，感觉自己还是虚度了大部分光阴，在一个个摆烂和赶ddl的周期中不断重复😕，虽然最后结局尚且看起来不是太惨，但学到的东西实属有限且让人觉得不牢靠。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>压在头上一年的事也在昨天两个老师的面试后宣告结束了，焦虑的生活好像又缓步了下来😀，回顾前三年的大学学习，感觉自己还是虚度了大部分光阴，在一个个摆烂和赶ddl的周期中不断重复😕，虽然最后结局尚且看起来不是太惨，但学到的东西实属有限且让人觉得不牢靠。</p>
+        <content type="html"><![CDATA[<!-- more -->
+<p>压在头上一年的事也在昨天两个老师的面试后宣告结束了，焦虑的生活好像又缓步了下来😀，回顾前三年的大学学习，感觉自己还是虚度了大部分光阴，在一个个摆烂和赶ddl的周期中不断重复😕，虽然最后结局尚且看起来不是太惨，但学到的东西实属有限且让人觉得不牢靠。</p>
 <!-- more -->
 <p>开这个部落格的想法其实去年12月就有了，但当时只是因为时间紧还有hugo操作起来麻烦的原因就不了了之。这里点名表扬xiao诗诗同学给我推荐新的搭博客的工具，祝愿她申请到自己想要的学校。🙏🙏</p>
 <!-- more -->
