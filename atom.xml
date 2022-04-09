@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yihanexile.github.io</id>
     <title>弈梒blog</title>
-    <updated>2022-04-09T09:51:08.524Z</updated>
+    <updated>2022-04-09T10:29:28.166Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yihanexile.github.io"/>
     <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://yihanexile.github.io/images/avatar.png</logo>
     <icon>https://yihanexile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 弈梒blog</rights>
+    <entry>
+        <title type="html"><![CDATA[红警教学第一期——幻影怎么用]]></title>
+        <id>https://yihanexile.github.io/post/hong-jing-jiao-xue-di-yi-qi-huan-ying-zen-me-yong/</id>
+        <link href="https://yihanexile.github.io/post/hong-jing-jiao-xue-di-yi-qi-huan-ying-zen-me-yong/">
+        </link>
+        <updated>2022-04-09T09:52:36.000Z</updated>
+        <content type="html"><![CDATA[<p>这一期讲讲怎么用13个幻影打30个犀牛</p>
+<h1 id="幻影坦克">幻影坦克</h1>
+<p><img src="https://yihanexile.github.io/post-images/1649498283380.jpg" alt="" loading="lazy"><br>
+幻影坦克是盟军科技树t3的坦克，这个坦克最主要的优点就是在静止不动的时候会根据地形幻化成小树，而在小树状态大多数兵种是无法自动识别并攻击的，如果不用辐射，则需要玩家用ctrl键强制攻击，而在坦克群对打的时候使用所有的坦克强制攻击一个坦克显然就会伤害溢出，而幻影只需要站桩输出，火力基本能均匀的覆盖在地方坦克群的前线。此外幻影还有手长，对坦克对步兵都攻击伤害强等特点。因为以上特点使得幻影成为了坦克界真正意义上的白嫖怪。结合经验而谈主要会有以下三个场景，而且这三个场景可能会是同时或连续性的出现。</p>
+<ol>
+<li>大规模坦克交战</li>
+<li>敌方坦克分兵发呆</li>
+<li>敌方坦克撤退</li>
+</ol>
+<p>但一般来讲，有点经验的pvp玩家是不会打出伤害溢出等显而易见划不来的操作。所以重点来了，**使用幻影的真正奥义是在战局中分析把握对面的心理，然后利用盟军的强骚扰性，制造出白嫖的场景。**萌新和pvp较弱的玩家可能会觉得我说的有点道理，但总归是纸上谈兵，所以下面我就用一个pvp视频片段来具体展示一下幻影的奥义。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[活在当下]]></title>
         <id>https://yihanexile.github.io/post/huo-zai-dang-xia/</id>
