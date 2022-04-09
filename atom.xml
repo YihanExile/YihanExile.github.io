@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yihanexile.github.io</id>
     <title>弈梒blog</title>
-    <updated>2022-04-09T09:46:52.551Z</updated>
+    <updated>2022-04-09T09:51:08.524Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yihanexile.github.io"/>
     <link rel="self" href="https://yihanexile.github.io/atom.xml"/>
@@ -27,53 +27,6 @@
 <img src="https://yihanexile.github.io/post-images/1647255791185.png" alt="" loading="lazy"><br>
 <img src="https://yihanexile.github.io/post-images/1647255793634.png" alt="" loading="lazy"><br>
 <img src="https://yihanexile.github.io/post-images/1647255796020.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Infinite Mixture Model复现有感（实验炼丹需要工程化进行）]]></title>
-        <id>https://yihanexile.github.io/post/infinite-mixture-model-fu-xian-you-gan-shi-yan-lian-dan-xu-yao-gong-cheng-hua-jin-xing/</id>
-        <link href="https://yihanexile.github.io/post/infinite-mixture-model-fu-xian-you-gan-shi-yan-lian-dan-xu-yao-gong-cheng-hua-jin-xing/">
-        </link>
-        <updated>2021-10-07T12:35:53.000Z</updated>
-        <content type="html"><![CDATA[<p>国庆回家玩了五天然后到学校已经是10月5号晚上了，昨天写完代码调了调总算是跑通，结果发现精度和原来居然和Prototypical Network一模一样，这令我大为震惊😨😨，毕竟在我的预想里此模型符合Multi-Modal Distribution也就是所谓的多峰分布，是很能契合目前的任务场景的。当时就觉得有点无语，于是去玩游戏了，晚上睡觉的时候又总觉着不对，今天就把训练的过程打印了出来一步步看错在了哪里，发现果然有几个小问题。😅😅</p>
-<ol>
-<li>关于nn.parameters这个用法没领悟到，他的默认是会保存梯度，但是.cuda要针对里面的tensor用不要针对可学习参数化后的parameters用</li>
-<li>一些关于张量维度的计算错误，不方便讲的太细，且我怀疑模型代码里还有类似的错误，之后需要看一下<br>
-在修改完这两个地方后，精度果然上去了2个多的点，但是感觉还是没到顶。</li>
-</ol>
-<h2 id="感悟">感悟</h2>
-<ol>
-<li>训练模型效率真的太低了，训练参数这些我都没有系统的好好保存下来，每训练一次模型就会复制一次代码或者修改一次代码，这样效率很低下。下一个项目需要考虑工程化，学习一下保存日志的方法。</li>
-<li>对于模型效果不符合人意的情况下一定要想想会不会是代码哪里没写对，这很重要。</li>
-<li>对于知识的构建一定要牢固可靠，不然经常会出现一些奇怪的错误</li>
-</ol>
-<h2 id="接下来的安排">接下来的安排</h2>
-<ol>
-<li>模型参数调优，代码检查优化</li>
-<li>考虑结合SEN Distance来提高精度<br>
-<img src="https://yihanexile.github.io/post-images/1633611237203.png" alt="" loading="lazy"></li>
-<li>考虑使用SIMPLE模型提高精度</li>
-<li>使用KNN进行分类，记录一下精度，以便作对比</li>
-<li>写项目结题书</li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[torch.nn.parameter.Parameter]]></title>
-        <id>https://yihanexile.github.io/post/parameters/</id>
-        <link href="https://yihanexile.github.io/post/parameters/">
-        </link>
-        <updated>2021-09-29T18:13:01.000Z</updated>
-        <content type="html"><![CDATA[<p>这几天偷懒了，实验一直没怎么推进，昨晚上看了下代码，这篇博客算是对于IMP这个模型的实验代码设计。<br>
-首先，由于IMP与原始Pronet不同，一个batch内的操作相较于原来的求均值表达原型复杂了很多。(原来的模型主要是在forward里实现一些batchnorm,relu,conv的操作)其余的加减乘除操作更多的被放在了后续非nn.module的执行。比较合理的设计是将(增加簇，删除簇这些操作在IMP这个类里实现（从而辅助继承了nn.module模块的IMP类在forward方法里实现完整的一个正向传播）。<br>
-写到这里就必须讲一下IMP的理解，里面有个lamda(由一些超参和sigma共同决定的是否建立新簇的阈值)变量是通过学习sigma来进行调整的，那么sigma应该也是一个需要保存的变量。以前遇到的模型，基本只是直接保存网络的权重,没有较小的可学习的参数需要学习。这次会用到一个新的类叫做torch.nn.parameter.Parameter，官方文档解释如下</p>
-<h2 id="torchnnparameterparameter">torch.nn.parameter.Parameter</h2>
-<p>A kind of Tensor that is to be considered a module parameter.<br>
-Parameters are Tensor subclasses, that have a very special property when used with Module s - when they’re assigned as Module attributes they are automatically added to the list of its parameters, and will appear e.g. in parameters() iterator. Assigning a Tensor doesn’t have such effect. This is because one might want to cache some temporary state, like last hidden state of the RNN, in the model. If there was no such class as Parameter, these temporaries would get registered too.</p>
-<h3 id="parameters">Parameters：</h3>
-<p>data (Tensor) – parameter tensor.<br>
-requires_grad (bool, optional) – if the parameter requires gradient. See Locally disabling gradient computation for more details. Default: True<br>
-其实理解应该就是一个可学习的tensor，且在module的parameters列表里，所以其实如果是像relation network这种需要两个网络架构的模型<img src="https://yihanexile.github.io/post-images/1633076236228.png" alt="" loading="lazy">，可以将每一个network structure用一个nn.module类来实现，这样可以很好的实现模块化，重复使用使模型也看起来更为的简洁易懂。但如果像IMP这种网络结构+一些learnable小参数的模型，就用parameters添加就行，模型会将该参数保存。</p>
 ]]></content>
     </entry>
     <entry>
@@ -134,7 +87,7 @@ requires_grad (bool, optional) – if the parameter requires gradient. See Local
 <!-- more -->
 <p><strong>3.游戏</strong></p>
 <!-- more -->
-<p>现在已经是2021年9月25日的凌晨一点了，窗外小雨伴小风。</p>
+<p>现在已经是2021年9月25日的凌晨一点了，窗外在刮小风下小雨，适合睡觉。</p>
 <!-- more -->
 <p><strong>Welcome to Yihan Blog！</strong><br>
 😘😘<br>
