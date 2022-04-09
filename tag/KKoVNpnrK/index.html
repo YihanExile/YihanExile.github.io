@@ -17,6 +17,7 @@
 </head>
 <body>
   <div class="antialiased flex flex-col min-h-screen" id="app">
+
     <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
   <div class="flex justify-end px-4">
     <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
@@ -43,34 +44,45 @@
     </a>
   </nav>
 </div>
+
     <div class="max-w-4xl w-full mx-auto pt-32">
-      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        红警教学
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://yihanexile.github.io/tag/KKoVNpnrK/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              红警教学（1）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://yihanexile.github.io/tag/3zddpL0wq/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              剧and书（1）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://yihanexile.github.io/tag/kmpKaUQnM/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              个人简介（1）
-            </a>
-          </div>
-        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://yihanexile.github.io/post/hong-jing-jiao-xue-di-yi-qi-huan-ying-zen-me-yong/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          红警教学第一期——幻影怎么用
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022-04-09</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        这一期讲讲怎么用13个幻影打30个犀牛
+幻影坦克
+
+幻影坦克是盟军科技树t3的坦克，这个坦克最主要的优点就是在静止不动的时候会根据地形幻化成小树，而在小树状态大多数兵种是无法自动识别并攻击的，如果不用辐射，则需要玩家用ctrl键强制攻击，而...
       </div>
+      <a href="https://yihanexile.github.io/post/hong-jing-jiao-xue-di-yi-qi-huan-ying-zen-me-yong/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://yihanexile.github.io/post-images/hong-jing-jiao-xue-di-yi-qi-huan-ying-zen-me-yong.jpg" alt="红警教学第一期——幻影怎么用">
+    
+  </div>
+  
+      </div>
+
+      
       <footer class="py-12 text-center px-4 md:px-0" v-pre>
   Welcome to Yihan's Blog!
 </footer>
+
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
